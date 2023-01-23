@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 word = "Holberton"
 word_last_2 = "Hol"
 word_first_3 = "on"
