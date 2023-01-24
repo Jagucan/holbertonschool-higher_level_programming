@@ -19,4 +19,3 @@ elif number < 0:
         print(f"Last digit of {number} is {num} and is zero")
 else:
     print(f"Last digit of {number} is {num} and is 0")
-    
