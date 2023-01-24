@@ -1,30 +1,30 @@
 #!/usr/bin/python3
 import random
 number = random.randint(-10000, 10000)
-num = number % 10
-
+num1 = number % 10
+num2 = number % -10
 if number > 0:
-    if num > 5:
+    if num1 > 5:
         print("Last digit of {:d} is {:d} and is greater than 5"
-              .format(number, num))
-    elif num < 6:
+              .format(number, num1))
+    elif num1 < 6:
         print("Last digit of {:d} is {:d} and is less than 6 and not 0"
-              .format(number, num))
+              .format(number, num1))
     else:
         print("Last digit of {:d} is {:d} and is zero"
-              .format(number, num))
+              .format(number, num1))
 
 elif number < 0:
-    if num > 0 & num < 6:
-        print("Last digit of {:d} is -{:d} and is less than 6 and not 0"
-              .format(number, num))
-    elif num < 0 & num > 5:
-        print("Last digit of {:d} is -{:d} and is greater than 5"
-              .format(number, num))
+    if num2 < 0 & num2 < 6:
+        print("Last digit of {:d} is {:d} and is less than 6 and not 0"
+              .format(number, num2))
+    elif num2 < 0 & num2 > 5:
+        print("Last digit of {:d} is {:d} and is greater than 5"
+              .format(number, num2))
     else:
         print("Last digit of {:d} is {:d} and is zero"
-              .format(number, num))
+              .format(number, num2))
 
 else:
     print("Last digit of {:d} is {:d} and is 0"
-          .format(number, num))
+          .format(number, num2))
