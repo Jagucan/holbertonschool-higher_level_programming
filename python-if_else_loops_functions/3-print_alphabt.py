@@ -2,8 +2,8 @@
 len = 97
 letter = ""
 
-while len <= 122:
-    if chr(len).isalpha() and chr(len) not in ['q', 'p']:
+while len < 123:
+    if chr(len).isalpha() and chr(len) not in ['q', 'e']:
         letter = letter + chr(len)
     len = len + 1
-print(f"{letter}")
+print("{:s}".format(letter))
