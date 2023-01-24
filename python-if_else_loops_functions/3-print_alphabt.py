@@ -1,6 +1,9 @@
 #!/usr/bin/python3
-letter = 97
-while letter < 123:
-    if chr(letter) and chr(letter) not in ["q", "e"]:
-        print(chr(letter), end='')
-    letter += 1
+len = 97
+letter = ""
+
+while len <= 122:
+    if chr(len).isalpha() and chr(len) not in ['q', 'p']:
+        letter = letter + chr(len)
+    len = len + 1
+print(f"{letter}")
