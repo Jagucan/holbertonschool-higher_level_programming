@@ -1,8 +1,4 @@
 #!/usr/bin/python3
-len = 97
-letter = ""
-while len < 123:
-    if chr(len) and chr(len) not in ['q', 'e']:
-        letter = letter + chr(len)
-    len = len + 1
-print("{:s}".format(letter))
+for len in range(97, 123):
+    if chr(len) not in ["q", "e"]:
+        print("{:s}".format(chr(len)), end="")
