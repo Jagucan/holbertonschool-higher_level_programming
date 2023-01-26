@@ -6,5 +6,4 @@ b = 2
 
 if __name__ == "__main__":
     sum = add(a, b)
-
     print("{:d} + {:d} = {:d}".format(a, b, sum))
