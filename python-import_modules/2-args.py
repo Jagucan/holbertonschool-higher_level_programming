@@ -14,7 +14,7 @@ def argument():
         print("{:d}: {}" .format(argc, sys.argv[1]))
 
     else:
-        print("{:d} argument:" .format(argc))
+        print("{:d} arguments:" .format(argc))
         for num in range(1, argc + 1):
             print("{:d}: {}" .format(num, sys.argv[num]))
 
