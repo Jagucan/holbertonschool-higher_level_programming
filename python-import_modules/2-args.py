@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 import sys
 
-def argument():
+def  argument():
 
     argc = len(sys.argv) - 1
+
     if argc == 0:
         print("{:d} arguments." .format(argc))
 
