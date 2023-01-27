@@ -2,6 +2,7 @@
 import sys
 
 def argument():
+
     argc = len(sys.argv) - 1
     if argc == 0:
         print("{:d} arguments." .format(argc))
@@ -16,4 +17,5 @@ def argument():
             print("{:d}: {}" .format(num, sys.argv[num]))
 
 if __name__ == "__main__":
+
     argument()
