@@ -18,6 +18,7 @@ def argument():
         for num in range(1, argc + 1):
             print("{:d}: {}" .format(num, sys.argv[num]))
 
+
 if __name__ == "__main__":
 
     argument()
