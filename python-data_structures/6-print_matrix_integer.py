@@ -3,7 +3,8 @@ def print_matrix_integer(matrix=[[]]):
     if matrix is not None:
         for row in matrix:
             for num in row:
-                if isinstance(num, int):
-                    print("{:d}".format(num), end="")
+                if row is not None:
+                    if isinstance(num, int):
+                        print("{:d}".format(num), end=" ")
 
             print()
