@@ -9,14 +9,9 @@ def list_division(my_list_1, my_list_2, list_length):
             list_1 = my_list_1[num]
             list_2 = my_list_2[num]
 
-        except (IndexError, TypeError, ZeroDivisionError):
+        except IndexError:
             result.append(0)
-            if IndexError:
-                print("division by 0")
-            if TypeError:
-                print("wrong type")
-            if ZeroDivisionError:
-                print("out of range")
+            print("out of range")
 
         finally:
             if isinstance(list_1, (int, float)) \
@@ -24,5 +19,13 @@ def list_division(my_list_1, my_list_2, list_length):
 
                 if list_2 != 0:
                     result.append(list_1 / list_2)
+
+                else:
+                    result.append(0)
+                    print("division by 0")
+
+            else:
+                result.append(0)
+                print("wrong type")
 
     return result
