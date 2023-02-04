@@ -11,9 +11,12 @@ def list_division(my_list_1, my_list_2, list_length):
 
         except (IndexError, TypeError, ZeroDivisionError):
             result.append(0)
-            print("division by 0")
-            print("wrong type")
-            print("out of range")
+            if IndexError:
+                print("division by 0")
+            if TypeError:
+                print("wrong type")
+            if ZeroDivisionError:
+                print("out of range")
 
         finally:
             if isinstance(list_1, (int, float)) \
