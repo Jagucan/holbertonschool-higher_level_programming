@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-""" My first square
-"""
+""" My first square """
 class Square:
+    """ This is the Square class. """
     def __init__(self):
-        """ Empty class Square """
+        """ Initializes a new instance of the Square class """
         pass
