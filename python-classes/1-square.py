@@ -5,6 +5,7 @@
     that can be used to create square objects.
 """
 
+
 class Square:
     """ This is the Square class. """
 
