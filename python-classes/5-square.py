@@ -57,5 +57,5 @@ class Square:
         else:
             square = ""
             for i in range(self.size):
-                square += "*" * self.size + "\n"
+                square += "#" * self.size + "\n"
             print(square[:-1])
