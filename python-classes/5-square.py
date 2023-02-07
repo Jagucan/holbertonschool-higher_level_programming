@@ -52,7 +52,7 @@ class Square:
         """ Instance of the Square class,
             to printing an square.
         """
-        if self.size == 0:
+        if (self.size) == 0:
             print("")
         else:
             square = ""
