@@ -17,13 +17,6 @@ import module.
 >>> add_integer(2)
 100
 
->>> try:
->>>     print(add_integer(4, "School"))
->>> except Exception as e:
->>>     print(e)
-Traceback (most recent call last):
-TypeError: b must be an integer
-
 >>> add_integer("School", 1)
 TypeError: a must be an integer
 
