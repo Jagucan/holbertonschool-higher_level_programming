@@ -21,6 +21,7 @@ import module.
 TypeError: b must be an integer
 
 >>> add_integer("School", 1)
+Traceback (most recent call last):
 TypeError: a must be an integer
 
 >>> add_integer(None)
