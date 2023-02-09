@@ -19,9 +19,9 @@ def matrix_divided(matrix, div):
         integers/floats")
 
     if not all(map(lambda x:
-        all(map(lambda y: type(y) in [int, float], x)), matrix)):
-            raise TypeError("matrix must be a matrix (list of lists) of \
-                integers/floats")
+    all(map(lambda y: type(y) in [int, float], x)), matrix)):
+        raise TypeError("matrix must be a matrix (list of lists) of \
+        integers/floats")
 
     if type(div) not in [int, float]:
         raise TypeError("div must be a number")
