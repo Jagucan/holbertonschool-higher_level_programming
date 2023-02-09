@@ -3,10 +3,10 @@
 
 
 def matrix_divided(matrix, div):
-    """ The function divides all elements of a matrix if is a number int or float.
+    """ The function divides all elements of a matrix if is a number.
 
     Args:
-        matrix (int, float): It's a list of lists and each row must be the same size.
+        matrix (int, float): It's a list of lists.
         div (int, float): It's a number, must be different from 0.
 
     Returns:
@@ -14,11 +14,15 @@ def matrix_divided(matrix, div):
     """
 
 
-    if type(matrix) is not list or not all(map(lambda x: type(x) is list, matrix)):
-        raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+    if type(matrix) is not list \
+        or not all(map(lambda x: type(x) is list, matrix)):
+        raise TypeError("matrix must be a matrix (list of lists) of \
+            integers/floats")
 
-    if not all(map(lambda x: all(map(lambda y: type(y) in [int, float], x)), matrix)):
-        raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+    if not all(map(lambda x: all\
+        (map(lambda y: type(y) in [int, float], x)), matrix)):
+        raise TypeError("matrix must be a matrix (list of lists) of \
+            integers/floats")
 
     if type(div) not in [int, float]:
         raise TypeError("div must be a number")
