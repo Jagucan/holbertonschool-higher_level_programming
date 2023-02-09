@@ -13,12 +13,12 @@ def matrix_divided(matrix, div):
         Returns a new matrix whit the result of a division.
     """
 
-    if type(matrix) is not list\
-    or not all(map(lambda x: type(x) is list, matrix)):
+    if type(matrix) is not list or not\
+    all(map(lambda x: type(x) is list, matrix)):
         raise TypeError("matrix must be a matrix (list of lists) of \
         integers/floats")
 
-    if not all(map(lambda x:
+    if not all(map(lambda x:\
     all(map(lambda y: type(y) in [int, float], x)), matrix)):
         raise TypeError("matrix must be a matrix (list of lists) of \
         integers/floats")
