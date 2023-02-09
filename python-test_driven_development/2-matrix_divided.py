@@ -1,6 +1,9 @@
 #!/usr/bin/python3
+""" The function divides all elements of a matrix. """
+
+
 def matrix_divided(matrix, div):
-    """ The function divides all elements of a matrix.
+    """ The function divides all elements of a matrix if is a number int or float.
 
     Args:
         matrix (int, float): It's a list of lists and each row must be the same size.
