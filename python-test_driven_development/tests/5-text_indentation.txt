@@ -59,3 +59,11 @@ Utrum igitur tibi litteram videor an totas paginas commovere?
 01112.
 
 11111
+
+>>>text_indentation()
+Traceback (most recent call last):
+TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+>>>text_indentation(1222)
+Traceback (most recent call last):
+TypeError: text must be a string
