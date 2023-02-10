@@ -4,7 +4,7 @@
 
 
 def print_square(size):
-    """ Checks if size is an int or float greater than 0.
+    """ Checks if size is an int greater than 0.
         if it is it prints a square
     """
 
