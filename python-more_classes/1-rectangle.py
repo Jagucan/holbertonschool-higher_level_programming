@@ -5,30 +5,30 @@
 class Rectangle:
     """ This is the Rectangle class. """
 
-    def __init__(self, width=0, height=0):
+    def __init__(self, widht=0, height=0):
         """ Initializes a new instance of the Rectangle class """
 
-        self.__width = widht
+        self.__widht = widht
         self.__height = height
 
     @property
-    def width(self):
+    def widht(self):
         """ Instance of the Rectangle class,
-            to get the value of the private attribute "__width".
+            to get the value of the private attribute "__widht".
         """
-        return self.__width
+        return self.__widht
 
-    @width.setter
-    def width(self, value):
+    @widht.setter
+    def widht(self, value):
         """ Instance of the Rectangle class,
-            to set a new value for the private attribute "__width"
+            to set a new value for the private attribute "__widht"
         """
-        self.__width = value
+        self.__widht = value
 
         if not isinstance(value, int):
-            raise TypeError("width must be an integer")
+            raise TypeError("widht must be an integer")
         if value < 0:
-            raise ValueError("width must be >= 0")
+            raise ValueError("widht must be >= 0")
 
     @property
     def height(self):
