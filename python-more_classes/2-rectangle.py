@@ -57,4 +57,7 @@ class Rectangle:
         """ Instance of the Rectangle class,
             to return the current perimeter area
         """
-        return (self.width + self.height) * 2
+        if self.height != 0 or self.height != 0:
+            return (self.width + self.height) * 2
+        else:
+            return 0
