@@ -9,4 +9,7 @@ class MyList(list):
         """ Public instance method that prints
             the sorted list.
         """
-        print(sorted(self))
+
+        list = [num for num in self if isinstance(num, int)]
+        sorted_list = sorted(list)
+        print(sorted_list)
