@@ -10,7 +10,7 @@ import module.
 
 >>> bg.integer_validator("name", "John")
 >>> print("[{}] {}".format(e.__class__.__name__, e))
-[TypeError] name must be an integer
+[TypeError] age must be an integer
 
 >>> bg.integer_validator("age", 0)
 >>> print("[{}] {}".format(e.__class__.__name__, e))
