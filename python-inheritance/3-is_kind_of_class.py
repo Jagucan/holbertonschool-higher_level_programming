@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" returns True or False if the object is exactly
+""" returns True or False if the object is
     an instance of the specified class.
 """
 
