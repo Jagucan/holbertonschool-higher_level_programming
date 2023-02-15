@@ -1,7 +1,10 @@
 #!/usr/bin/python3
+""" Module that returns the list
+    of available attributes
+"""
 def lookup(objeto):
-    """ Devuelve una lista de atributos y
-        métodos disponibles de un objeto.
+    """ Returns the list of available attributes
+        and methods of an object
     """
     resultado = []
     for atributo in dir(objeto):
