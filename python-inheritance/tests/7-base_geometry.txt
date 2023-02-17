@@ -1,28 +1,32 @@
-=====================
- " 7-base_geometry "
-=====================
+=================
+ 7-base_geometry
+=================
 
-import module.
->>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
-
+import:
+         >>> BaseGeometry = __import__("7-base_geometry").BaseGeometry
 
 >>> bg = BaseGeometry()
 
->>> bg.integer_validator("name", "John")
->>> print("[{}] {}".format(e.__class__.__name__, e))
-[TypeError] age must be an integer
+>>> bg.integer_validator("width", 9)
+
+
+>>> bg.integer_validator("name", str)
+[TypeError] bool must be an integer
 
 >>> bg.integer_validator("age", 0)
->>> print("[{}] {}".format(e.__class__.__name__, e))
 [ValueError] age must be greater than 0
 
 >>> bg.integer_validator("distance", -4)
->>> print("[{}] {}".format(e.__class__.__name__, e))
 [ValueError] distance must be greater than 0
 
->>> bg.integer_validator("age",)
->>> print("[{}] {}".format(e.__class__.__name__, e))
-[TypeError] integer_validator() missing 1 required positional argument: 'value'
+>>> bg.integer_validator("name", "hello")
+[TypeError] name must be an integer
 
->>> bg.integer_validator(0, 5)
->>> print("[{}] {}".format(e.__class__.__name__, e))
+>>> bg.integer_validator("none", None)
+[TypeError] name must be an integer
+
+>>> bg.integer_validator()
+[TypeError] integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+>>> bg.integer_validator("name")
+[TypeError] integer_validator() missing 1 required positional argument: 'value'
