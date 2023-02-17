@@ -33,7 +33,7 @@ TypeError: name must be an integer
 >>> bg.integer_validator("none", None)
 Traceback (most recent call last):
         ...
-TypeError: name must be an integer
+TypeError: none must be an integer
 
 >>> bg.integer_validator()
 Traceback (most recent call last):
