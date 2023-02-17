@@ -8,6 +8,6 @@ def append_write(filename="", text=""):
     """ Appends a string in a text file """
 
     with open(filename, mode="w", encoding="UTF-8") as my_file:
-        my_file.seek(2)
+        my_file.seek(2, 0)
         num = my_file.write(text)
         return num
