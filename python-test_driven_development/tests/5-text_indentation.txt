@@ -42,7 +42,7 @@ Quae animi affectio suum cuique tribuens atque hanc, quam dico.
 
 Utinam quidem dicerent alium alio beatiorem! Iam ruinas videres
 
->>>text_indentation("""Lorem ipsum dolor sit amet, consectetur adipiscing elit. \
+>>> text_indentation("""Lorem ipsum dolor sit amet, consectetur adipiscing elit. \
 Quonam modo? Utrum igitur tibi litteram videor an totas paginas commovere? \
 1111. 12347589""")
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -55,15 +55,17 @@ Utrum igitur tibi litteram videor an totas paginas commovere?
 
 12347589
 
->>>text_indentation("01112. 11111")
+>>> text_indentation("01112. 11111")
 01112.
 
 11111
 
->>>text_indentation()
+>>> text_indentation()
 Traceback (most recent call last):
+        ...
 TypeError: text_indentation() missing 1 required positional argument: 'text'
 
->>>text_indentation(1222)
+>>> text_indentation(1222)
 Traceback (most recent call last):
+        ...
 TypeError: text must be a string
