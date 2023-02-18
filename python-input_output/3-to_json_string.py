@@ -5,7 +5,8 @@
 import json
 """ Import JSON Module"""
 
+
 def to_json_string(my_obj):
     """ JSON - string """
-    
+
     return json.dumps(my_obj)
