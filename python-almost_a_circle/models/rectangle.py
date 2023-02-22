@@ -11,9 +11,9 @@ class Rectangle(Base):
         super().__init__(id)
 
         if not isinstance(width, int):
-            raise TypeError("OK")
+            raise TypeError("width must be an integer")
         elif width <= 0:
-            raise ValueError("OK")
+            raise ValueError("width must be > 0")
         else:
             self.__width = width
 
