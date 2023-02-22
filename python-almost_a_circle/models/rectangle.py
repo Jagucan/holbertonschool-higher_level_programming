@@ -10,6 +10,7 @@ from models.base import Base
         _type_: _description_
 """
 
+
 class Rectangle(Base):
     """_summary_
 
