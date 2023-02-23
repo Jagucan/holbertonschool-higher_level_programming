@@ -10,8 +10,6 @@ def class_to_json(obj):
 
     desc = {}
     for l, val in obj.__dict__.items():
-
         if isinstance(val, (list, dict, str, int, bool)):
             desc[l] = val
-
     return desc
