@@ -33,6 +33,3 @@ INSERT INTO  second_table (name, score) VALUES(
     'George',
     '8'
 );
-
-SHOW TABLES;
-SELECT * FROM second_table;
