@@ -1,3 +1,5 @@
+-- List databases
+
 import mysql.connector
 
 cnx = mysql.connector.connect(user='root', password='JGut2402',
