@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS second_table(
 
 INSERT INTO  second_table (id, name, score) VALUES(
     '1',
-    'Jhon',
+    'John',
     '10'
 );
 
