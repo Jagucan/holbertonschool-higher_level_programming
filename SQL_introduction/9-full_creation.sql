@@ -4,7 +4,6 @@ CREATE TABLE IF NOT EXISTS second_table(
     id INT NOT NULL, 
     name VARCHAR(256),
     score INT,
-    PRIMARY KEY (id)
 );
 
 INSERT INTO  second_table (name, score) VALUES(
