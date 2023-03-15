@@ -1,8 +1,4 @@
--- Full Creation
-
-CREATE DATABASE IF NOT EXISTS hbtn_0c_0;
-
-USE hbtn_0c_0;
+-- Full creation 
 
 CREATE TABLE IF NOT EXISTS second_table(
     id INT NOT NULL AUTO_INCREMENT, 
@@ -30,3 +26,4 @@ INSERT INTO  second_table (name, score) VALUES(
     'George',
     '8'
 );
+
