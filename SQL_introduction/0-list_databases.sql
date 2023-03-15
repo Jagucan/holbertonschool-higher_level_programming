@@ -2,17 +2,16 @@
 
 import mysql.connector
 
-cnx = mysql.connector.connect(user='root', password='',
-                              host='localhost', database='information_schema')
+cnx = mysql.connector.connect(user='root', password='root')
 
 cursor = cnx.cursor()
 
-cursor.execute("SELECT schema_name FROM information_schema.schemata")
+query = "SELECT schema_name FROM information_schema.schemata"
+cursor.execute(query)
 
-list_databases = cursor.fetchall()
-print("List of databases:")
-for row in list_databases:
-    print(row[0])
+databases = cursor.fetchall()
+for db in databases:
+    print(db[0])
 
 cursor.close()
 cnx.close()
