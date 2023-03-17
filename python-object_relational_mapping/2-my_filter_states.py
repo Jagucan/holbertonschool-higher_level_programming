@@ -15,7 +15,8 @@ if __name__ == "__main__":
     database = sys.argv[3]
     matchName = sys.argv[4]
 
-    conn = MySQLdb.connect(host="localhost", port=3306, user=username, passwd=password, db=database, charset="utf8")
+    conn = MySQLdb.connect(host="localhost", port=3306, user=username,
+                                passwd=password, db=database, charset="utf8")
     cur = conn.cursor()
     cur.execute(f"SELECT * FROM states WHERE name LIKE '{matnhname}' ORDER BY id ASC")
     query_rows = cur.fetchall()
