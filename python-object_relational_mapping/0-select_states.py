@@ -1,7 +1,10 @@
 #!/usr/bin/python3
-"""  """
+""" Get all states """
+
 import MySQLdb
 import sys
+" Import Module "
+
 
 if __name__ == "__main__":
     username = sys.argv[1]
