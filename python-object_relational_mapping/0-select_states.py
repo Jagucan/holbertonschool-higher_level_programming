@@ -1,11 +1,9 @@
 #!/usr/bin/python3
-"""
-This script lists all states from the database hbtn_0e_0_usa
-Arguments:
-    username - MySQL username
-    password - MySQL password
-    database - Database name
-"""
+# This script lists all states from the database hbtn_0e_0_usa
+# Arguments:
+#    username - MySQL username
+#    password - MySQL password
+#    database - Database name
 # Use: ./0-select_states.py 
 
 import sys
