@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 # This script lists all states from the database hbtn_0e_0_usa
 # Arguments:
 #    username - MySQL username
@@ -11,6 +12,7 @@ import MySQLdb
 
 
 if __name__ == "__main__":
+    # get arguments
     username = sys.argv[1]
     password = sys.argv[2]
     database = sys.argv[3]
