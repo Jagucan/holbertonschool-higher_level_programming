@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """
 This file contains the class definition of a State
 and an instance Base = declarative_base():
@@ -10,7 +9,8 @@ from sqlalchemy.ext.declarative import declarative_base
 """ Import Modules """
 
 Base = declarative_base()
-    """ creates a base class to declare data models. """
+""" creates a base class to declare data models. """
+
 
 class State(Base):
     """ Class state that inherits from Base """
