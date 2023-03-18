@@ -13,7 +13,7 @@ Base = declarative_base()
 """ creates a base class to declare data models. """
 
 class state(Base):
-    """ Class state that inherits from Base """
+""" Class state that inherits from Base """
 
     __tablename__ = 'states'
     id = Column(Integer, primary_key=True, unique=True,
