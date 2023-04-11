@@ -6,7 +6,7 @@ if (!isNaN(args)) {
   for (let l = 1; l <= args; l++) {
     let square = '';
     for (let w = 1; w <= args; w++) {
-      square += '*';
+      square += 'X';
     }
     console.log(square);
   }
