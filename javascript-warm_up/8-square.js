@@ -4,11 +4,11 @@ const args = process.argv.slice(2);
 
 if (!isNaN(args)) {
   for (let l = 1; l <= args; l++) {
-    let quare = '';
-    for (let c = 1; c <= args; c++) {
-      quare += '*';
+    let square = '';
+    for (let w = 1; w <= args; w++) {
+      square += '*';
     }
-    console.log(e);
+    console.log(square);
   }
 } else {
   console.log('Missing size');
