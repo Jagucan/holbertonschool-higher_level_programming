@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-//add.js
+// add.js
 exports.add = function (a, b) {
   return a + b;
 };
