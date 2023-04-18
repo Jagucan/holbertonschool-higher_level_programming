@@ -23,12 +23,12 @@ class Rectangle {
   }
 
   double () {
-    this.height *= 2; 
-    this.width *= 2; 
-    }
+    this.height *= 2;
+    this.width *= 2;
+  }
 
   rotate () {
-    let r = this.width;
+    const r = this.width;
     this.width = this.height;
     this.height = r;
   }
