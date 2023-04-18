@@ -2,7 +2,7 @@
 
 const args = process.argv.slice(2);
 
-function findSecondBiggest(args) {
+function findSecondBiggest (args) {
   const num = args.map(Number);
   const sortedArgs = num.sort((a, b) => b - a);
 
