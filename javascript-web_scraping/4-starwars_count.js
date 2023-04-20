@@ -19,5 +19,4 @@ request(apiUrl, function (error, response, body) {
     }
   }
   console.log(count);
-  count = 0;
 });
