@@ -15,7 +15,7 @@ request(apiUrl, function (error, response, body) {
   for (const film of films) {
     const characters = film.characters;
     if (characters.includes(urlPeople + characterId + '/')) {
-      count += 1;
+      count++;
     }
   }
   console.log(count);
