@@ -1,3 +1,4 @@
 #!/usr/bin/node
-
-$('header').css('color', '#FF0000');
+jQuery(document).ready(function () {
+  jQuery('header').css('color', '#FF0000');
+});
